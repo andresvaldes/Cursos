@@ -18,10 +18,14 @@ public class App {
         int cantidad;
 
         //Pedir la cantidad de alumnos
-        do 
-            {System.out.print("Por favor, ingresa la cantidad de alumnos: ");
-            cantidad = lector.nextInt();}
-            while (cantidad<=0);
+        do {
+            System.out.print("Por favor, ingresa la cantidad de alumnos: ");
+            cantidad = lector.nextInt();
+
+            if (cantidad<=0) {
+                System.out.print("La cantidad de alumnos debe ser mayor a 0\n");
+            }
+            } while (cantidad<=0);
 
         System.out.println("Son " + cantidad + " alumnos");
     }
