@@ -3,6 +3,10 @@
  */
 package cursos;
 
+import cursos.model.Estudiante;
+import java.util.Scanner;
+import java.util.ArrayList;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
