@@ -15,10 +15,13 @@ public class App {
     public static void main(String[] args) {
         Scanner lector = new Scanner(System.in);
         System.out.println(new App().getGreeting());
+        int cantidad;
 
-        // 1. Pedir la cantidad de alumnos
-        System.out.print("Por favor, ingresa la cantidad de alumnos: ");
-        int cantidad = lector.nextInt();
+        //Pedir la cantidad de alumnos
+        do 
+            {System.out.print("Por favor, ingresa la cantidad de alumnos: ");
+            cantidad = lector.nextInt();}
+            while (cantidad<=0);
 
         System.out.println("Son " + cantidad + " alumnos");
     }
